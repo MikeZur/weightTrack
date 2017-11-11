@@ -1,2 +1,0 @@
-*WeightTrack/bin/
-*WeightTrack/key.txt
