@@ -1,2 +1,2 @@
-WeightTrack/bin/
-WeightTrack/key.txt
+*WeightTrack/bin/
+*WeightTrack/key.txt
