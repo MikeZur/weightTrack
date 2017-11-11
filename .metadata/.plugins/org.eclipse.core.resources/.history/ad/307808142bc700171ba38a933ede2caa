@@ -1,0 +1,60 @@
+import java.io.BufferedReader;
+//import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Parser {
+	
+	String json = Main.get();
+	
+	public static ArrayList<String> getKey() throws IOException{
+		FileReader f = new FileReader("food.txt");
+		BufferedReader b = new BufferedReader(f);
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		String check;
+		while((check = b.readLine()) != null){
+			arr.add(check);
+		}
+		b.close();
+		return arr;
+	}
+	
+	public static int[] parse(String s, ArrayList<String> a){
+		int[] list = new int[4];
+		System.out.println(Arrays.toString(list));
+		
+		for(int i = 0; i < s.length()-4; i++){
+			if(s.substring(i,i+4).equals("tags")){
+				
+				int z = i+5;
+				
+				while(!s.substring(z,z+1).equals("]")){
+					System.out.println(s.substring(z,z+1));
+					
+					if(s.substring(z,z+1).equals("\"")){
+						int k = z+1;
+						while(!s.substring(k,k+1).equals("\"")){
+							k++;
+						}
+						String check = s.substring(z+1,k);
+						System.out.println(check);
+						for(int t = 0; t < a.size(); t++){
+							if(check.equals(a.get(t))){
+								list[t] = list[t] + 1;
+							}
+						}
+						z = k+1;
+					}
+					z++;
+				}
+			}
+		}
+		
+		
+		return list;
+	}
+
+}

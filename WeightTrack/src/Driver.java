@@ -9,6 +9,7 @@ public class Driver {
 		//System.out.println(a.toString());
 		
 		String s = Main.getter();
+		
 		//System.out.println(s);
 		
 		int[] i = Parser.parse(s,a);

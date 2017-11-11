@@ -7,7 +7,6 @@ import java.util.Arrays;
 
 public class Parser {
 	
-	String json = Main.get();
 	
 	public static ArrayList<String> getKey() throws IOException{
 		FileReader f = new FileReader("food.txt");
@@ -23,13 +22,13 @@ public class Parser {
 	}
 	
 	public static int[] parse(String s, ArrayList<String> a){
-		int[] list = new int[4];
+		int[] list = new int[a.size()];
 		System.out.println(Arrays.toString(list));
 		
-		for(int i = 0; i < s.length()-4; i++){
-			if(s.substring(i,i+4).equals("tags")){
+		for(int i = 0; i < s.length()-12; i++){
+			if(s.substring(i,i+11).equals("Predictions")){
 				
-				int z = i+5;
+				int z = i+12;
 				
 				while(!s.substring(z,z+1).equals("]")){
 					System.out.println(s.substring(z,z+1));
@@ -44,6 +43,7 @@ public class Parser {
 						for(int t = 0; t < a.size(); t++){
 							if(check.equals(a.get(t))){
 								list[t] = list[t] + 1;
+								return list;
 							}
 						}
 						z = k+1;
@@ -52,9 +52,8 @@ public class Parser {
 				}
 			}
 		}
-		
-		
 		return list;
+		
 	}
 
 }

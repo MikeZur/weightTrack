@@ -1,11 +1,4 @@
-// This sample uses the Apache HTTP client library(org.apache.httpcomponents:httpclient:4.2.4)
-// and the org.json library (org.json:json:20170516).
-
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.net.URI;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -24,10 +17,8 @@ public class Main
     // **********************************************
     // *** Update or verify the following values. ***
     // **********************************************
-
     // Replace the subscriptionKey string value with your valid subscription key.
-
-    public static final String subscriptionKey = "";
+    public static final String subscriptionKey = "e3c3a3b18a3a44058eca3fcd458dd0e4";
 
     // Replace or verify the region.
     //
@@ -37,10 +28,10 @@ public class Main
     //
     // NOTE: Free trial subscription keys are generated in the westcentralus region, so if you are using
     // a free trial subscription key, you should not need to change this region.
-    public static final String uriBase = "https://eastus.api.cognitive.microsoft.com/vision/v1.0/analyze";
-    
+    public static final String uriBase = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.0/Prediction/c34c8a8b-2053-47b1-8a94-0c02f72236e4/image?iterationId=ee835b28-7f5d-4722-8856-721d87f0e2d2";
+	    
     private static String s;
-    
+	    
     public static String get(){
     	return s;
     }
@@ -62,10 +53,10 @@ public class Main
             URI uri = builder.build();
             HttpPost request = new HttpPost(uri);
 
-            // Request headers.
+	        // Request headers.
             request.setHeader("Content-Type", "application/octet-stream");
-            request.setHeader("Ocp-Apim-Subscription-Key", subscriptionKey);
-
+            request.setHeader("Prediction-Key", subscriptionKey);
+            
             // Request body.
             File img = new File("Banana.jpg");
             FileEntity reqEntity = new FileEntity(img);
@@ -74,7 +65,6 @@ public class Main
             // Execute the REST API call and get the response entity.
             HttpResponse response = httpclient.execute(request);
             HttpEntity entity = response.getEntity();
-
             if (entity != null)
             {
                 // Format and display the JSON response.
@@ -82,7 +72,7 @@ public class Main
                 JSONObject json = new JSONObject(jsonString);
                 s = json.toString(2);
                 //System.out.println("REST Response:\n");
-               // System.out.println(json.toString(2));
+                System.out.println(json.toString(2));
                 
             }
         }
@@ -94,3 +84,4 @@ public class Main
         return s;
     }
 }
+
