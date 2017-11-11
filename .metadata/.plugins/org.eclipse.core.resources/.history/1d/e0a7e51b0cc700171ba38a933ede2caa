@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Parser {
+	
+	String s = Main.get();
+	
+	public static ArrayList<String> getKey() throws IOException{
+		FileReader f = new FileReader("food.txt");
+		BufferedReader b = new BufferedReader(f);
+		
+		ArrayList<String> arr = new ArrayList<String>();
+		while(b.readLine() != null){
+			arr.add(b.readLine());
+		}
+		b.close();
+		f.close();
+		return arr;
+	}
+
+}

@@ -1,0 +1,11 @@
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Driver {
+	
+	public static void main(String[] args) throws IOException{
+		ArrayList<String> s = Parser.getKey();
+		System.out.println(s.toString());
+	}
+
+}

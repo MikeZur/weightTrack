@@ -1,0 +1,16 @@
+
+public class Calculator {
+	
+	
+	public Double calcBMR(int a, Double w, Double h, String g){
+		Double bmr;
+		
+		if(g == "male"){
+			bmr = 66 + 6.2*w +12.7*h - 6.76*a;
+		}
+		else{
+			bmr = 655.1 + 4.35*w +47*h - 4.7+a;
+		}
+	}
+
+}
