@@ -26,8 +26,16 @@ public class Main
     // **********************************************
 
     // Replace the subscriptionKey string value with your valid subscription key.
-
-    public static final String subscriptionKey = "";
+	public static String getSub()throws IOException{
+		FileReader f;
+		f = new FileReader("key.txt");
+		BufferedReader b = new BufferedReader(f);
+		String ret = b.readLine();
+		b.close();
+		return ret;
+	}
+	
+    public static final String subscriptionKey = getSub();
 
     // Replace or verify the region.
     //

@@ -1,11 +1,7 @@
 // This sample uses the Apache HTTP client library(org.apache.httpcomponents:httpclient:4.2.4)
 // and the org.json library (org.json:json:20170516).
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.net.URI;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -26,8 +22,7 @@ public class Main
     // **********************************************
 
     // Replace the subscriptionKey string value with your valid subscription key.
-
-    public static final String subscriptionKey = "";
+    public static final String subscriptionKey = "f176d967735046f7934981e715c10789";
 
     // Replace or verify the region.
     //
