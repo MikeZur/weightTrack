@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,21 +12,15 @@ public class Driver {
 		
 		Pers user;
 		
-		File m = new File("user.txt");
-		
-		if(m.exists()){
-			FileReader r = new FileReader("user.txt");
+		FileReader r = new FileReader("user.txt");
+		if(r == null){
 			BufferedReader b = new BufferedReader(r);
 			String dat = b.readLine();
-			b.close();
 			user = new Pers(dat);
 		}
-		else{
-			user = new Pers();
-		}
 		
 		
-		
+		user = new Pers();
 		
 		
 		ArrayList<String> a = Parser.getKey();

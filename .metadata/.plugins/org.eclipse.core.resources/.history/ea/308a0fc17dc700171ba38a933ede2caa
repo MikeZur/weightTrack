@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,23 +10,11 @@ public class Driver {
 	
 	public static void main(String[] args) throws IOException{
 		
-		Pers user;
+		Pers user = new Pers();
 		
-		File m = new File("user.txt");
-		
-		if(m.exists()){
-			FileReader r = new FileReader("user.txt");
-			BufferedReader b = new BufferedReader(r);
-			String dat = b.readLine();
-			b.close();
-			user = new Pers(dat);
-		}
-		else{
-			user = new Pers();
-		}
-		
-		
-		
+		FileReader r = new FileReader("user.txt");
+		BufferedReader b = new BufferedReader(r);
+		String dat = b.readLine();
 		
 		
 		ArrayList<String> a = Parser.getKey();

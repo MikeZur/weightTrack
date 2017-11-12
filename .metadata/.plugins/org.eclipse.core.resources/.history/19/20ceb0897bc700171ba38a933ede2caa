@@ -3,7 +3,6 @@ import java.util.Scanner;
 class Goal{
 	static String activitylevel;
 	static int goal = 0;
-	
 	public static void go(){
 
 		
@@ -18,7 +17,7 @@ class Goal{
 		String xx = sc.nextLine();
 		int weight = Integer.parseInt(xx);
 
-		System.out.println("Are you a male?(true or false only)");
+		System.out.println("Are you a male?");
 
 		//boolean gender = sc.nextBoolean();
 		xx = sc.nextLine();
@@ -37,7 +36,7 @@ class Goal{
 		
 		System.out.println("Enter your activity level (i.e. Light, Medium, or Heavy: ");
 		activitylevel = sc.nextLine();
-		System.out.println(activitylevel);
+		System.out.println("xx " + activitylevel);
 		//double goal = 0;
 		if (activitylevel.equals("light")){
 			goal = (int)(bmr * 1.2);
@@ -55,9 +54,7 @@ class Goal{
 		System.out.println("How many calories have you consumed today?");
 		xx = sc.nextLine();
 		int dailycal = Integer.parseInt(xx);
-	}
-}
-/*
+
 		double calremaining = goal - dailycal;
 		//System.out.println("Enter your activity level (i.e. Light, Medium, or Heavy: ");
 		//activitylevel = sc.nextLine();
@@ -69,4 +66,4 @@ class Goal{
 
 
 	}
-}*/
+}

@@ -55,9 +55,7 @@ class Goal{
 		System.out.println("How many calories have you consumed today?");
 		xx = sc.nextLine();
 		int dailycal = Integer.parseInt(xx);
-	}
-}
-/*
+
 		double calremaining = goal - dailycal;
 		//System.out.println("Enter your activity level (i.e. Light, Medium, or Heavy: ");
 		//activitylevel = sc.nextLine();
@@ -69,4 +67,4 @@ class Goal{
 
 
 	}
-}*/
+}

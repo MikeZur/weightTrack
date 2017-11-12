@@ -19,7 +19,6 @@ public class Driver {
 			FileReader r = new FileReader("user.txt");
 			BufferedReader b = new BufferedReader(r);
 			String dat = b.readLine();
-			b.close();
 			user = new Pers(dat);
 		}
 		else{

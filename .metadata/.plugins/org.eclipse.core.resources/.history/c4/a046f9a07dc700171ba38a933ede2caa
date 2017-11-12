@@ -1,6 +1,3 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -8,28 +5,9 @@ import java.util.Arrays;
 
 public class Driver {
 	
+	static Pers user = new Pers();
 	
 	public static void main(String[] args) throws IOException{
-		
-		Pers user;
-		
-		File m = new File("user.txt");
-		
-		if(m.exists()){
-			FileReader r = new FileReader("user.txt");
-			BufferedReader b = new BufferedReader(r);
-			String dat = b.readLine();
-			b.close();
-			user = new Pers(dat);
-		}
-		else{
-			user = new Pers();
-		}
-		
-		
-		
-		
-		
 		ArrayList<String> a = Parser.getKey();
 		//System.out.println(a.toString());
 		

@@ -12,22 +12,9 @@ public class Pers {
 	public Pers(){
 		Goal.go();
 		goal = Goal.goal;
-		activityLvl = Goal.activitylevel;
 	}
 	public Pers(String info){
 		String[] arr = info.split("\\s");
-		cal = Integer.parseInt(arr[0]);
-		sugar = Integer.parseInt(arr[1]);
-		prot = Integer.parseInt(arr[2]);
-		carb = Integer.parseInt(arr[3]);
-		fat = Integer.parseInt(arr[4]);
-		goal = Integer.parseInt(arr[5]);
-		gender = Boolean.parseBoolean(arr[6]);
-		activityLvl = arr[7];
-	}
-	
-	public int getCalRem(){
-		return goal - cal;
 	}
 	
 	public void setGoal(int a){

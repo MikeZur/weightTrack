@@ -26,10 +26,6 @@ public class Pers {
 		activityLvl = arr[7];
 	}
 	
-	public int getCalRem(){
-		return goal - cal;
-	}
-	
 	public void setGoal(int a){
 		goal = a;
 	}
