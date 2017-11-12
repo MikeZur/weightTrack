@@ -1,11 +1,11 @@
 public class Pers {
 	
-	static int cal = 0;
-	static int sugar = 0;
-	static int prot = 0;
-	static int carb = 0;
-	static int fat = 0;
-	static int goal;
+	int cal = 0;
+	int sugar = 0;
+	int prot = 0;
+	int carb = 0;
+	int fat = 0;
+	int goal;
 	
 	public void setGoal(int a){
 		goal = a;
@@ -35,22 +35,22 @@ public class Pers {
 		return goal;
 	}
 	
-	public static void addCal(int a){
+	public void addCal(int a){
 		cal += a;
 	}
 	
-	public static void addSugar(int a){
+	public void addSugar(int a){
 		sugar += a;
 	}
 	
-	public static void addProt(int a){
+	public void addProt(int a){
 		prot += a;
 	}
 	
-	public static void addCarb(int a){
+	public void addCarb(int a){
 		carb += a;
 	}
-	public static void addFat(int a){
+	public void addFat(int a){
 		fat += a;
 	}
 }

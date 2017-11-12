@@ -1,32 +1,34 @@
 abstract public class Food{
 
-	protected static int calories;
-	protected static int sugar;
-	protected static int protein;
-	protected static int carbohydrates;
-	protected static int fats;
+	protected int calories;
+	protected int sugar;
+	protected int protein;
+	protected int carbohydrates;
+	protected int fats;
+	protected String name;
 	
 	
-	public Food(){
+	public Food(String s){
+		name = s;
 	}
 
-	public static int getcalories(){
+	public int getcalories(){
 		return calories;
 	}
 
-	public static int getsugar(){
+	public int getsugar(){
 		return sugar;
 	}
 	
-	public static int getprotein(){
+	public int getprotein(){
 		return protein;
 	}
    
-	public static int getcarbohydrates(){
+	public int getcarbohydrates(){
 		return carbohydrates;
 	}
    
-	public static int getfats(){
+	public int getfats(){
 		return fats;
 	}
 }

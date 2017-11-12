@@ -2,10 +2,10 @@ public class Pers {
 	
 	static int cal = 0;
 	static int sugar = 0;
-	static int prot = 0;
+	int prot = 0;
 	static int carb = 0;
-	static int fat = 0;
-	static int goal;
+	int fat = 0;
+	int goal;
 	
 	public void setGoal(int a){
 		goal = a;

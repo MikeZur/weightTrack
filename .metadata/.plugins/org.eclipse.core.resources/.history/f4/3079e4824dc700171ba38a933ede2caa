@@ -17,23 +17,9 @@ public class Driver {
 		
 		for(int k = 0; k < i.length; k++){
 			if(i[k] == 1){
-				if(k == 0){
-					Pers.addCal(Banana.getcalories());
-					Pers.addSugar(Banana.getsugar());
-					Pers.addProt(Banana.getprotein());
-					Pers.addCarb(Banana.getcarbohydrates());
-					Pers.addFat(Banana.getfats());
-				}
-				if(k==3){
-					Pers.addCal(Soylent.getcalories());
-					Pers.addSugar(Soylent.getsugar());
-					Pers.addProt(Soylent.getprotein());
-					Pers.addCarb(Soylent.getcarbohydrates());
-					Pers.addFat(Soylent.getfats());
-				}
+				System.out.println(a.get(k));
 			}
 		}
-		
 	}
 
 }
