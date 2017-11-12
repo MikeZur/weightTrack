@@ -31,7 +31,7 @@ public class Parser {
 				int z = i+12;
 				
 				while(!s.substring(z,z+1).equals("]")){
-					//System.out.println(s.substring(z,z+1));
+					System.out.println(s.substring(z,z+1));
 					
 					if(s.substring(z,z+1).equals("\"")){
 						int k = z+1;

@@ -7,8 +7,6 @@ public class Pers {
 	int fat = 0;
 	int goal;
 	double dailyLeft;
-	boolean gender;
-	String activityLvl;
 	
 	public Pers(){
 		

@@ -10,7 +10,7 @@ public class Structure {
 		Food banana = new Food(200, 28, 2, 21, 1);
 		Food pizza = new Food();
 		Food apple = new Food();
-		Food chknSand = new Food(285, 5, 37, 14, 9);
+		//Food chknSand = new Food(285, 5, 37, 14, 9);
 		
 		al = new ArrayList<Food>();
 		al.add(banana);
@@ -19,7 +19,7 @@ public class Structure {
 		al.add(soylent);
 		al.add(natureValleyBar);
 		al.add(awake);
-		al.add(chknSand);
+		//al.add(chknSand);
 		
 		return al;
 		

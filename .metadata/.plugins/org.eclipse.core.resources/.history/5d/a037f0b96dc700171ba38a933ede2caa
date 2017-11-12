@@ -19,7 +19,7 @@ public class Structure {
 		al.add(soylent);
 		al.add(natureValleyBar);
 		al.add(awake);
-		al.add(chknSand);
+		//al.add(chknSand);
 		
 		return al;
 		
