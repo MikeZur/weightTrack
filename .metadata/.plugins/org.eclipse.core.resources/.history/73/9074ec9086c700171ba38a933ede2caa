@@ -13,7 +13,6 @@ public class Pers {
 		Goal.go();
 		goal = Goal.goal;
 		activityLvl = Goal.activitylevel;
-		gender = Goal.gender;
 	}
 	public Pers(String info){
 		String[] arr = info.split("\\s");

@@ -19,7 +19,7 @@ class Goal{
 		String xx = sc.nextLine();
 		int weight = Integer.parseInt(xx);
 
-		System.out.println("Are you a female?(true or false only)");
+		System.out.println("Are you a male?(true or false only)");
 
 		//boolean gender = sc.nextBoolean();
 		xx = sc.nextLine();
@@ -27,7 +27,7 @@ class Goal{
 
 		double bmr;
 		
-		if (!gender){
+		if (gender){
 			bmr = 11 * weight;
 			//System.out.println("Your BMR is: ");
 			}

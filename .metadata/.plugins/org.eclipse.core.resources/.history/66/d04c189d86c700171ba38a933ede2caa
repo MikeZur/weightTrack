@@ -13,7 +13,6 @@ public class Pers {
 		Goal.go();
 		goal = Goal.goal;
 		activityLvl = Goal.activitylevel;
-		gender = Goal.gender;
 	}
 	public Pers(String info){
 		String[] arr = info.split("\\s");
@@ -27,7 +26,7 @@ public class Pers {
 		activityLvl = arr[7];
 	}
 	
-	public int getCalRem(){
+	public static int getCalRem(){
 		return goal - cal;
 	}
 	
