@@ -1,11 +1,11 @@
 public class Pers {
 	
-	int cal = 0;
-	int sugar = 0;
-	int prot = 0;
-	int carb = 0;
-	int fat = 0;
-	int goal;
+	static int cal = 0;
+	static int sugar = 0;
+	static int prot = 0;
+	static int carb = 0;
+	static int fat = 0;
+	static int goal;
 	
 	public Pers(){
 		
@@ -56,9 +56,5 @@ public class Pers {
 	}
 	public void addFat(int a){
 		fat += a;
-	}
-	public String toString(){
-		String s = ("You've eaten: " + cal + " calories, " + sugar + " grams of sugar, " + prot + " grams of protein, " + carb + "grams of carbs, and " + fat +" grams of fat!");
-		return s;
 	}
 }

@@ -37,7 +37,10 @@ public class Food{
 	public int getfats(){
 		return fats;
 	}
-	
+	public String toString(){
+		String s = ("You've eaten: " + calories + " calories, " + sugar + " grams of sugar, " + protein + " grams of protein, " + carbohydrates + "grams of carbs, and " + fats +" grams of fat!");
+		return s;
+	}
 }
 
 /*class NatureValleyBar extends Food {

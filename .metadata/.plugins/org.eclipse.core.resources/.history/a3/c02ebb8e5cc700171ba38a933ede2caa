@@ -57,8 +57,4 @@ public class Pers {
 	public void addFat(int a){
 		fat += a;
 	}
-	public String toString(){
-		String s = ("You've eaten: " + cal + " calories, " + sugar + " grams of sugar, " + prot + " grams of protein, " + carb + "grams of carbs, and " + fat +" grams of fat!");
-		return s;
-	}
 }

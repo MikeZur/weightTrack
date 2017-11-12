@@ -24,15 +24,11 @@ public class Driver {
 			Food f = al.get(k);
 			
 			user.addCal(f.getcalories());
-			user.addCarb(f.getcarbohydrates());
-			user.addFat(f.getfats());
-			user.addProt(f.getprotein());
-			user.addSugar(f.getsugar());
 			
 			}
 			
 		}
-		System.out.println(user.toString());
+		
 	}
 
 }

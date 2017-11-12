@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Food{
 
@@ -7,15 +8,8 @@ public class Food{
 	int carbohydrates;
 	int fats;
 	
+	
 	public Food(){
-		 
-	}
-	public Food(int a, int b, int c, int d, int e){
-		calories = a;
-		sugar = b;
-		protein = c;
-		carbohydrates = d;
-		fats = e;
 	}
 
 	public int getcalories(){
@@ -37,10 +31,9 @@ public class Food{
 	public int getfats(){
 		return fats;
 	}
-	
 }
 
-/*class NatureValleyBar extends Food {
+class NatureValleyBar extends Food {
 
 	public NatureValleyBar()
 	{
@@ -118,5 +111,4 @@ class Banana extends Food {
 		System.out.println("Awake Chocolate Bite has " + a.getfats()  + " grams of fat.");
 		}
 	}
-	*/
 

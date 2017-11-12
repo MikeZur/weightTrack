@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Driver {
 	
-	static Pers user = new Pers();
+	Pers user = new Pers();
 	
 	public static void main(String[] args) throws IOException{
 		ArrayList<String> a = Parser.getKey();
@@ -24,15 +24,11 @@ public class Driver {
 			Food f = al.get(k);
 			
 			user.addCal(f.getcalories());
-			user.addCarb(f.getcarbohydrates());
-			user.addFat(f.getfats());
-			user.addProt(f.getprotein());
-			user.addSugar(f.getsugar());
 			
 			}
 			
 		}
-		System.out.println(user.toString());
+		
 	}
 
 }

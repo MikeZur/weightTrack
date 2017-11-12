@@ -32,7 +32,7 @@ public class Driver {
 			}
 			
 		}
-		System.out.println(user.toString());
+		
 	}
 
 }

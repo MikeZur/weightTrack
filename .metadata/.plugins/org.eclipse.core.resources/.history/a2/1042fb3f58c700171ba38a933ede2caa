@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class Structure {
+	ArrayList<Food> al;
+	
+	public ArrayList<Food> makeList(){
+		Food Banana = new Food();
+		
+	}
+}

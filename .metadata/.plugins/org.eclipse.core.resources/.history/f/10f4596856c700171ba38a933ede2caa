@@ -1,5 +1,4 @@
-
-public class Food{
+abstract public class Food{
 
 	int calories;
 	int sugar;
@@ -7,40 +6,32 @@ public class Food{
 	int carbohydrates;
 	int fats;
 	
+	
 	public Food(){
-		 
-	}
-	public Food(int a, int b, int c, int d, int e){
-		calories = a;
-		sugar = b;
-		protein = c;
-		carbohydrates = d;
-		fats = e;
 	}
 
-	public int getcalories(){
+	public static int getcalories(){
 		return calories;
 	}
 
-	public int getsugar(){
+	public static int getsugar(){
 		return sugar;
 	}
 	
-	public int getprotein(){
+	public static int getprotein(){
 		return protein;
 	}
    
-	public int getcarbohydrates(){
+	public static int getcarbohydrates(){
 		return carbohydrates;
 	}
    
-	public int getfats(){
+	public static int getfats(){
 		return fats;
 	}
-	
 }
 
-/*class NatureValleyBar extends Food {
+class NatureValleyBar extends Food {
 
 	public NatureValleyBar()
 	{
@@ -118,5 +109,4 @@ class Banana extends Food {
 		System.out.println("Awake Chocolate Bite has " + a.getfats()  + " grams of fat.");
 		}
 	}
-	*/
 

@@ -1,0 +1,56 @@
+public class Pers {
+	
+	static int cal = 0;
+	static int sugar = 0;
+	static int prot = 0;
+	static int carb = 0;
+	static int fat = 0;
+	static int goal;
+	
+	public void setGoal(int a){
+		goal = a;
+	}
+	
+	public int getCal(){
+		return cal;
+	}
+	
+	public int getSugar(){
+		return sugar;
+	}
+	
+	public int getProt(){
+		return prot;
+	}
+	
+	public int getCarb(){
+		return carb;
+	}
+	
+	public int getFat(){
+		return fat;
+	}
+	
+	public int getGoal(){
+		return goal;
+	}
+	
+	public static void addCal(int a){
+		cal += a;
+	}
+	
+	public static void addSugar(int a){
+		sugar += a;
+	}
+	
+	public static void addProt(int a){
+		prot += a;
+	}
+	
+	public static void addCarb(int a){
+		carb += a;
+	}
+	public static void addFat(int a){
+		fat += a;
+	}
+}

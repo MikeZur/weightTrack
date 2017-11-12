@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class Driver {
 	
-	static Pers user = new Pers();
-	
 	public static void main(String[] args) throws IOException{
 		ArrayList<String> a = Parser.getKey();
 		//System.out.println(a.toString());
@@ -17,22 +15,25 @@ public class Driver {
 		int[] i = Parser.parse(s,a);
 		System.out.println(Arrays.toString(i));
 		
-		ArrayList<Food> al = new ArrayList<Food>();
-		al = Structure.makeList();
 		for(int k = 0; k < i.length; k++){
 			if(i[k] == 1){
-			Food f = al.get(k);
-			
-			user.addCal(f.getcalories());
-			user.addCarb(f.getcarbohydrates());
-			user.addFat(f.getfats());
-			user.addProt(f.getprotein());
-			user.addSugar(f.getsugar());
-			
+				if(k == 0){
+					Pers.addCal(Banana.getcalories());
+					Pers.addSugar(Banana.getsugar());
+					Pers.addProt(Banana.getprotein());
+					Pers.addCarb(Banana.getcarbohydrates());
+					Pers.addFat(Banana.getfats());
+				}
+				if(k==3){
+					Pers.addCal(Soylent.getcalories());
+					Pers.addSugar(Soylent.getsugar());
+					Pers.addProt(Soylent.getprotein());
+					Pers.addCarb(Soylent.getcarbohydrates());
+					Pers.addFat(Soylent.getfats());
+				}
 			}
-			
 		}
-		System.out.println(user.toString());
+		
 	}
 
 }
