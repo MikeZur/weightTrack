@@ -37,7 +37,7 @@ public class Main
     }
 
 
-    public static String getter()
+    public static String getter(File f)
     {
         HttpClient httpclient = new DefaultHttpClient();
 
@@ -58,7 +58,7 @@ public class Main
             request.setHeader("Prediction-Key", subscriptionKey);
             
             // Request body.
-            File img = new File("Banana.jpg");
+            File img = f;
             FileEntity reqEntity = new FileEntity(img);
             request.setEntity(reqEntity);
 
