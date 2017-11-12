@@ -17,7 +17,7 @@ public class Driver {
 		
 		for(int k = 0; k < i.length; k++){
 			if(i[k] == 1){
-				System.out.println(a.get(k));
+				System.out.println(a[k]);
 			}
 		}
 	}

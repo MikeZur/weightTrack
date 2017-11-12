@@ -14,12 +14,6 @@ public class Driver {
 		
 		int[] i = Parser.parse(s,a);
 		System.out.println(Arrays.toString(i));
-		
-		for(int k = 0; k < i.length; k++){
-			if(i[k] == 1){
-				System.out.println(a.get(k));
-			}
-		}
 	}
 
 }

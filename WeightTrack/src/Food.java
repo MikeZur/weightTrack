@@ -1,0 +1,108 @@
+abstract public class Food{
+
+	protected int calories;
+	protected int sugar;
+	protected int protein;
+	protected int carbohydrates;
+	protected int fats;
+
+	public int getcalories(){
+		return calories;
+	}
+
+	public int getsugar(){
+		return sugar;
+	}
+	
+	public int getprotein(){
+		return protein;
+	}
+   
+	public int getcarbohydrates(){
+		return carbohydrates;
+	}
+   
+	public int getfats(){
+		return fats;
+	}
+}
+
+class NatureValleyBar extends Food {
+
+	public NatureValleyBar()
+	{
+		calories = 190;
+		sugar = 11;
+		protein = 3;
+		carbohydrates = 29;
+		fats = 7;
+	} 
+}
+
+class Soylent extends Food {
+
+	public Soylent()
+	{
+		calories = 400;
+		sugar = 9;
+		protein = 20;
+		carbohydrates = 36;
+		fats = 21;
+	}
+}
+
+class Awake extends Food {
+
+	public Awake()
+	{
+		calories = 80;
+		sugar = 9;
+		protein = 1;
+		carbohydrates = 10;
+		fats = 5;
+	}
+}
+
+class Banana extends Food {
+
+	public Banana()
+	{
+		calories = 200;
+		sugar = 28;
+		protein = 2;
+		carbohydrates = 51;
+		fats = 1;
+	}
+
+	public static void main (String args[]) {
+		Food b = new Banana();
+		Food nvb = new NatureValleyBar();
+		Food s = new Soylent();
+		Food a = new Awake();
+   
+		System.out.println("Banana has " + b.getcalories() + " calories.");
+		System.out.println("Banana has " + b.getsugar()  + " grams of sugar.");
+		System.out.println("Banana has " + b.getprotein()  + " grams of protein.");
+		System.out.println("Banana has " + b.getcarbohydrates()  + " grams of carbohydrates.");
+		System.out.println("Banana has " + b.getfats()  + " grams of fat.");
+   
+		System.out.println("Nature Valley Bar has " + nvb.getcalories() + " calories.");
+		System.out.println("Nature Valley Bar has " + nvb.getsugar()  + " grams of sugar.");
+		System.out.println("Nature Valley Bar has " + nvb.getprotein()  + " grams of protein.");
+		System.out.println("Nature Valley Bar has " + nvb.getcarbohydrates()  + " grams of carbohydrates.");
+		System.out.println("Nature Valley Bar has " + nvb.getfats()  + " grams of fat.");
+   
+		System.out.println("Soylent has " + s.getcalories() + " calories.");
+		System.out.println("Soylent has " + s.getsugar()  + " grams of sugar.");
+		System.out.println("Soylent has " + s.getprotein()  + " grams of protein.");
+		System.out.println("Soylent has " + s.getcarbohydrates()  + " grams of carbohydrates.");
+		System.out.println("Soylent has " + s.getfats()  + " grams of fat.");
+   
+		System.out.println("Awake Chocolate Bite has " + a.getcalories() + " calories.");
+		System.out.println("Awake Chocolate Bite has " + a.getsugar()  + " grams of sugar.");
+		System.out.println("Awake Chocolate Bite has " + a.getprotein()  + " grams of protein.");
+		System.out.println("Awake Chocolate Bite has " + a.getcarbohydrates()  + " grams of carbohydrates.");
+		System.out.println("Awake Chocolate Bite has " + a.getfats()  + " grams of fat.");
+		}
+	}
+
