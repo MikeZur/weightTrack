@@ -29,7 +29,7 @@ public class CustomVisionClient {
         connection.setRequestProperty("Prediction-Key", predictionKey);
         connection.setDoOutput(true);
         DataOutputStream dataOutputStream = new DataOutputStream(connection.getOutputStream());
-        dataOutputStream.writeBytes("Banana.jpg");
+        dataOutputStream.writeUTF("Banana.jpg");
         dataOutputStream.flush();
         dataOutputStream.close();
         
