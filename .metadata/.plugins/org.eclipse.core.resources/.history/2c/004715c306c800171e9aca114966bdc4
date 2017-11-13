@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+class Goal{
+	static String activitylevel;
+	static int goal = 0;
+	static boolean gender;
+	
+	public static void go(){
+
+		
+		double finalcal = 0;
+		
+		//int dailycal = 0;
+ 
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("How much do you weigh?");
+		//int weight = sc.nextInt();
+		String xx = sc.nextLine();
+		int weight = Integer.parseInt(xx);
+
+		System.out.println("Are you a female?(true or false only)");
+
+		//boolean gender = sc.nextBoolean();
+		xx = sc.nextLine();
+		gender = Boolean.parseBoolean(xx);
+
+		double bmr;
+		
+		if (!gender){
+			bmr = 11 * weight;
+			//System.out.println("Your BMR is: ");
+			}
+		else{
+			bmr = 10 * weight;
+			//System.out.println("Your BMR is: ");
+			}
+		
+		System.out.println("Enter your activity level (i.e. Light, Medium, or Heavy: ");
+		activitylevel = sc.nextLine();
+		Syste-m.out.println(activitylevel);
+		//double goal = 0;
+		if (activitylevel.equals("light")){
+			goal = (int)(bmr * 1.2);
+			}
+		else if (activitylevel.equals("medium")){
+			goal = (int)(bmr * 1.55);
+			}
+		else if(activitylevel.equals("heavy")){
+			goal = (int)(bmr * 1.9);
+			}
+		else{
+			System.out.println("Invalid Fitness Level.");
+			}  
+	}
+}
+		
+		/*
+		System.out.println("How many calories have you consumed today?");
+		xx = sc.nextLine();
+		int dailycal = Integer.parseInt(xx);
+
+
+		double calremaining = goal - dailycal;
+		//System.out.println("Enter your activity level (i.e. Light, Medium, or Heavy: ");
+		//activitylevel = sc.nextLine();
+
+		System.out.println("Your calorie goal is: " + goal + "\nYour calories consumed for the day so far is: " + dailycal +  "\nYour activity level is: " + activitylevel+ "\nYour calories remaining for the day is: " + calremaining);
+ 
+
+
+
+
+	}
+}*/

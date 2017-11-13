@@ -1,6 +1,0 @@
-
-public class Parser {
-	
-	String s = Main.get();
-
-}

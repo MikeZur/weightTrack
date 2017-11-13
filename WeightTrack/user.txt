@@ -1,1 +1,1 @@
-780 11 26 94 35 2376 true light
+800 112 8 84 4 2216 false medium

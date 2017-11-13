@@ -18,7 +18,7 @@ public class Main
     // *** Update or verify the following values. ***
     // **********************************************
     // Replace the subscriptionKey string value with your valid subscription key.
-    public static final String subscriptionKey = "";
+    public static final String subscriptionKey = "e3c3a3b18a3a44058eca3fcd458dd0e4";
 
     // Replace or verify the region.
     //
