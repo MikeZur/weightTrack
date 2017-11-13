@@ -12,7 +12,7 @@ public class CustomVisionClient {
         String imageUrl = "https://www.aldi.us/fileadmin/_processed_/e/f/csm_Apples_D_01_4fc17d030f.jpg";
         String projectId = "SET_ME";
         String modelId = "SET_ME";
-		String predictionKey = "";
+		String predictionKey = "e3c3a3b18a3a44058eca3fcd458dd0e4";
 
         String postJsonResponse = classifyImage(imageUrl, projectId, modelId, predictionKey);
 

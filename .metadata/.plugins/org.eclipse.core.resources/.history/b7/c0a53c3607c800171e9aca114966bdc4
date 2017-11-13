@@ -33,7 +33,7 @@ public class Driver {
 		ArrayList<String> a = Parser.getKey();
 		//System.out.println(a.toString());
 		
-		String s = Main.get();
+		String s = Main.getter();
 		
 		//System.out.println(s);
 		
